@@ -82,6 +82,14 @@ body {
         ul {
             @apply flex-center lg:gap-12 gap-7;
         }
+
+        .team-login-btn {
+            @apply px-4 py-2 rounded text-white font-medium cursor-pointer transition-opacity hover:opacity-90;
+        }
+
+        .contact-btn {
+            @apply px-4 py-2 rounded text-white font-medium transition-opacity hover:opacity-90;
+        }
     }
 
     .noisy {
@@ -92,7 +100,7 @@ body {
         @apply relative z-10 min-h-dvh w-full border border-transparent;
 
         h1 {
-            @apply md:mt-32 mt-40 text-8xl md:text-[20vw] leading-none text-center font-modern-negra;
+            @apply md:mt-32 mt-40 text-5xl md:text-[12vw] leading-none text-center font-modern-negra;
         }
 
         .left-leaf {

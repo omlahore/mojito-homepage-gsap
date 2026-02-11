@@ -102,7 +102,7 @@ const goodLists = [
 
 const storeInfo = {
  heading: "Where to Find Us",
- address: "456, Raq Blvd. #404, Los Angeles, CA 90210",
+ address: "Sai Commercial Complex, 324, BS Devashi Marg, Govandi East, Mumbai, Maharashtra 400088",
  contact: {
 	phone: "(555) 987-6543",
 	email: "hello@jsmcocktail.com",
@@ -137,7 +137,7 @@ const socials = [
 const allCocktails = [
  {
 	id: 1,
-	name: "Classic Mojito",
+	name: "Digital Transformation",
 	image: "/images/drink1.png",
 	title: "Simple Ingredients, Bold Flavor",
 	description:
@@ -145,7 +145,7 @@ const allCocktails = [
  },
  {
 	id: 2,
-	name: "Raspberry Mojito",
+	name: "Brand and Visual Identity",
 	image: "/images/drink2.png",
 	title: "A Zesty Classic That Never Fails",
 	description:
@@ -153,7 +153,7 @@ const allCocktails = [
  },
  {
 	id: 3,
-	name: "Violet Breeze",
+	name: "Growth <br /> Marketing",
 	image: "/images/drink3.png",
 	title: "Simple Ingredients, Bold Flavor",
 	description:
@@ -161,7 +161,7 @@ const allCocktails = [
  },
  {
 	id: 4,
-	name: "Curacao Mojito",
+	name: "Social Media Marketing",
 	image: "/images/drink4.png",
 	title: "Crafted With Care, Poured With Love",
 	description:

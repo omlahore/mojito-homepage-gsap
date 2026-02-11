@@ -57,8 +57,8 @@ const Menu = () => {
 				 ? 'text-white border-white'
 				 : 'text-white/50 border-white/50'}
 			 `}	onClick={() => goToSlide(index)}
+			 dangerouslySetInnerHTML={{ __html: cocktail.name }}
 			>
-			 {cocktail.name}
 			</button>
 		 )
 		})}
@@ -67,12 +67,12 @@ const Menu = () => {
 	 <div className="content">
 		<div className="arrows">
 		 <button className="text-left" onClick={() => goToSlide(currentIndex - 1)}>
-			<span>{prevCocktail.name}</span>
+			<span dangerouslySetInnerHTML={{ __html: prevCocktail.name }}></span>
 			<img src="/images/right-arrow.png" alt="right-arrow" aria-hidden="true" />
 		 </button>
 		 
 		 <button className="text-left" onClick={() => goToSlide(currentIndex + 1)}>
-			<span>{nextCocktail.name}</span>
+			<span dangerouslySetInnerHTML={{ __html: nextCocktail.name }}></span>
 			<img src="/images/left-arrow.png" alt="left-arrow" aria-hidden="true" />
 		 </button>
 		</div>
@@ -84,7 +84,7 @@ const Menu = () => {
 		<div className="recipe">
 		 <div ref={contentRef} className="info">
 			<p>Recipe for:</p>
-			<p id="title">{currentCocktail.name}</p>
+			<p id="title" dangerouslySetInnerHTML={{ __html: currentCocktail.name }}></p>
 		 </div>
 		 
 		 <div className="details">

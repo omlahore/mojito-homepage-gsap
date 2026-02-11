@@ -24,16 +24,26 @@ const Navbar = () => {
 	<nav>
 	 <div>
 		<a href="#home" className="flex items-center gap-2">
-		 <img src="/images/logo.png" alt="logo" />
-		 <p>Velvet Pour</p>
+		 <img src="/images/MM-1.png" alt="logo" className="h-8 md:h-10" />
 		</a>
 		
 		<ul>
 		 {navLinks.map((link) => (
 			<li key={link.id}>
-			 <a href={`#${link.id}`}>{link.title}</a>
+			 <a 
+				href={`#${link.id}`}
+				className={link.id === 'contact' ? 'contact-btn' : ''}
+				style={link.id === 'contact' ? { backgroundColor: '#83C244' } : {}}
+			 >
+				{link.title}
+			 </a>
 			</li>
 		 ))}
+		 <li>
+			<button className="team-login-btn" style={{ backgroundColor: '#83C244' }}>
+				Team Login
+			</button>
+		 </li>
 		</ul>
 	 </div>
 	</nav>
