@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && aws s3 sync dist/ s3://marketingmojito-homepage/ --delete && aws cloudfront create-invalidation --distribution-id EB0J1R0U1048P --paths '/*'"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
